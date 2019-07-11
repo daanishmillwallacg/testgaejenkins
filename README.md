@@ -1,3 +1,3 @@
 # testgaejenkins
 
-Hello World GAE App
+Hello World GAE Application
