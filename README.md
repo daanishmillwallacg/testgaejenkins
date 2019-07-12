@@ -1,70 +1,25 @@
-HelloWorld for App Engine Standard (Java 8)
-============================
+# Getting started on Google Cloud Platform for Java®
 
-This sample demonstrates how to deploy an application on Google App Engine.
+[![CircleCI Build Status](https://circleci.com/gh/GoogleCloudPlatform/getting-started-java.svg?style=shield&circle-token=51b789e102291cbeae6817678d02da0f4cf25f1f)](https://circleci.com/gh/GoogleCloudPlatform/getting-started-java)
+[![Coverage Status](https://codecov.io/gh/GoogleCloudPlatform/getting-started-java/branch/master/graph/badge.svg)](https://codecov.io/gh/GoogleCloudPlatform/getting-started-java)
 
-See the [Google App Engine standard environment documentation][ae-docs] for more
-detailed instructions.
+The code for the samples is contained in individual folders on this repository.
+Follow the instructions at [Getting Started on Google Cloud Platform for Java](https://cloud.google.com/java/) or the README files in each folder for instructions on how to run locally and deploy.
 
-[ae-docs]: https://cloud.google.com/appengine/docs/java/
+Managed VMs on Google Cloud Platform use the [Java Servlets](http://www.oracle.com/technetwork/java/overview-137084.html) & [Java Server Pages](http://www.oracle.com/technetwork/java/index-jsp-138231.html) on [Jetty](http://www.eclipse.org/jetty/).
+
+1. [Helloworld-servlet](helloworld-servlet) Servlet based Hello World app
+1. [HelloWorld-jsp](helloworld-jsp) Java Server Pages based Hello World app
+1. [HelloWorld-springboot](helloworld-springboot) Spring Boot based Hello World app
+1. [Bookshelf](bookshelf) A full featured app that demonstrates Authentication and CRUD operations for [Cloud Datastore](https://cloud.google.com/datastore/docs/concepts/overview?hl=en) and [Cloud SQL](https://cloud.google.com/sql/docs/introduction).
+
+## Contributing changes
+
+* See [CONTRIBUTING.md](CONTRIBUTING.md)
 
 
-* [Java 8](http://www.oracle.com/technetwork/java/javase/downloads/index.html)
-* [Maven](https://maven.apache.org/download.cgi) (at least 3.5)
-* [Gradle](https://gradle.org/gradle-download/) (optional)
-* [Google Cloud SDK](https://cloud.google.com/sdk/) (aka gcloud)
+## Licensing
 
-## Setup
+* See [LICENSE](LICENSE)
 
-• Download and initialize the [Cloud SDK](https://cloud.google.com/sdk/)
-
-    gcloud init
-
-* Create an App Engine app within the current Google Cloud Project
-
-    gcloud app create
-
-## Maven
-### Running locally
-
-    mvn appengine:run
-
-To use vist: http://localhost:8080/
-
-### Deploying
-
-    mvn appengine:deploy
-
-To use vist:  https://YOUR-PROJECT-ID.appspot.com
-
-## Gradle
-### Running locally
-
-    gradle appengineRun
-
-If you do not have gradle installed, you can run using `./gradlew appengineRun`.
-
-To use vist: http://localhost:8080/
-
-### Deploying
-
-    gradle appengineDeploy
-
-If you do not have gradle installed, you can deploy using `./gradlew appengineDeploy`.
-
-To use vist:  https://YOUR-PROJECT-ID.appspot.com
-
-## Testing
-
-    mvn verify
-
- or
-
-    gradle test
-
-As you add / modify the source code (`src/main/java/...`) it's very useful to add [unit testing](https://cloud.google.com/appengine/docs/java/tools/localunittesting)
-to (`src/main/test/...`).  The following resources are quite useful:
-
-* [Junit4](http://junit.org/junit4/)
-* [Mockito](http://mockito.org/)
-* [Truth](http://google.github.io/truth/)
+Java is a registered trademark of Oracle Corporation and/or its affiliates.
